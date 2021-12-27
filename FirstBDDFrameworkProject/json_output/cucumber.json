@@ -1,0 +1,226 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-27T13:25:24.558Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1631712800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Browser is open",
+            "match": {
+              "location": "stepdefinition.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1419418800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on google search page",
+            "match": {
+              "location": "stepdefinition.GoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84504500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters the text in search box",
+            "match": {
+              "location": "stepdefinition.GoogleSearchSteps.user_enters_the_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1213738300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hits enter",
+            "match": {
+              "location": "stepdefinition.GoogleSearchSteps.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4408177700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is navigated to search result",
+            "match": {
+              "location": "stepdefinition.GoogleSearchSteps.user_is_navigated_to_search_result()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-27T13:25:33.389Z",
+        "line": 3,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "login-functionality-check;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "stepdefinition.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username and password",
+            "match": {
+              "location": "stepdefinition.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Clicks on login page",
+            "match": {
+              "location": "stepdefinition.LoginSteps.clicks_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is navigated to Home page",
+            "match": {
+              "location": "stepdefinition.LoginSteps.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality check",
+    "description": "",
+    "id": "login-functionality-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-27T13:25:33.422Z",
+        "line": 11,
+        "name": "Check nopcommerce login is successful with valid credentials",
+        "description": "",
+        "id": "login-functionality-check-for-nopcommerce;check-nopcommerce-login-is-successful-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2698878300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Nopcommerce login page",
+            "match": {
+              "location": "stepdefinition.Nopcommercelogin.user_is_on_nopcommerce_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232295200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Nopcommerce User enters admin@yourstore.com and admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yourstore.com",
+                  "offset": 24
+                },
+                {
+                  "val": "admin",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinition.Nopcommercelogin.nopcommerce_user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "Clicks on Nopcommerce login page",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Nopcommerce User is navigated to Home page",
+            "match": {
+              "location": "stepdefinition.Nopcommercelogin.nopcommerce_user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality check for Nopcommerce",
+    "description": "",
+    "id": "login-functionality-check-for-nopcommerce",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/loginfeatureparameterised.feature",
+    "tags": []
+  }
+]
